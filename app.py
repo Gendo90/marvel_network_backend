@@ -1,6 +1,5 @@
 # 1. import 
 from flask import Flask, jsonify, request
-from collections import defaultdict, deque
 from network_functions import setupUndirHeroGraph, getSankeyResult
 
 app = Flask(__name__)
