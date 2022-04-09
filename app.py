@@ -25,16 +25,20 @@ Note: May need more expansive & fine-grained control over endpoints in the futur
 
 @app.route("/api/sankey", methods=['GET'])
 def get_sankey_data():
-    args = request.args
-    print(args)
-    hero1 = request.args.get("hero1")
-    hero2 = request.args.get("hero2")
+    try:
+        args = request.args
+        print(args)
+        hero1 = request.args.get("hero1")
+        hero2 = request.args.get("hero2")
 
-    output_json = getSankeyResult(hero1, hero2, undir_hero_graph)
+        output_json = getSankeyResult(hero1, hero2, undir_hero_graph)
 
-    response = jsonify(output_json)
+        response = jsonify(output_json)
 
-    response.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
+        response.headers.add("Access-Control-Allow-Origin", "http://localhost:3000")
+        
+    except:
+        response = None
 
     return response
     
