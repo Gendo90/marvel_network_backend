@@ -2,7 +2,7 @@
 
 ## Summary
 
-This basic Flask server provides the backend APIs for the [Marvel Social Network frontend](https://github.com/Gendo90/marvel_network_frontend). There is only one API currently, which provides the shortest paths data for the [Sankey data visualization](https://marvel-network-frontend.vercel.app/). Since the app is still in its infancy, the server uses an "adhoc" self-signed certificate to run HTTPS and is therefore "untrustworthy" according to many browsers/security software. I am working on remedying this shortcoming in the near future - but if you don't feel comfortable running the live app, feel free to run this backend along with the frontend locally to get the same experience, all on your own computer!
+This basic Flask server provides the backend APIs for the [Marvel Social Network frontend](https://github.com/Gendo90/marvel_network_frontend). There is only one API currently, which provides the shortest paths data for the [Sankey data visualization](https://marvel-network-frontend.vercel.app/). More APIs that support additional data visualizations are coming soon!
 
 ## APIs
 
